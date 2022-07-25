@@ -7,8 +7,7 @@ void dfs(int v) {
 	for (i=1;i<=n;i++)
 	  if(a[v][i] && !reach[i]) {
 		printf("\n %d->%d",v,i);
-		dfs(i);
-		}
+		dfs(i);}
 }
 void main() {
     clock_t start,end;
