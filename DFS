@@ -8,7 +8,7 @@ void dfs(int v) {
 	  if(a[v][i] && !reach[i]) {
 		printf("\n %d->%d",v,i);
 		dfs(i);
-	}
+		}
 }
 void main() {
     clock_t start,end;
@@ -29,11 +29,9 @@ void main() {
 	printf("\n");
 	for (i=1;i<=n;i++) {
 		if(reach[i])
-		   count++;
-	}
+		   count++;}
 	if(count==n)
 	  printf("\n Graph is connected"); else
 	  printf("\n Graph is not connected");
 	  end=clock();
-    printf("\ntime taken %f ", difftime(end,start)/CLOCKS_PER_SEC);
-	}
+    printf("\ntime taken %f ", difftime(end,start)/CLOCKS_PER_SEC);}
